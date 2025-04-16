@@ -1,5 +1,5 @@
 import streamlit as st
-
+from pedidos import cargapedidos
 
 def main():
     # Título de la aplicación
@@ -9,11 +9,11 @@ def main():
     choice = st.sidebar.selectbox("Menu", menu)
  # Lógica para mostrar el contenido correspondiente basado en la opción seleccionada
     if choice == "CLIENTES":
-        st.subheader("Machine Learning")
+        st.subheader("MIS CLIENTES")
     elif choice == "PEDIDOS":
-        st.subheader("Machine Learning")
+        cargapedidos()
     elif choice == "VEHICULOS":
-        st.subheader("Machine Learning")
+        st.subheader("VEHICULOS")
     elif choice == "MACHINE LEARNING":
         st.subheader("Machine Learning")
     else:

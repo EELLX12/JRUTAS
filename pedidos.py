@@ -4,10 +4,10 @@ import pandas as pd
 def cargapedidos():
     st.subheader("Pedidos")
     try:
-        df = pd.read_csv("data/pedidos.csv")
+        df = pd.read_csv("Archivos/pedidop.csv")
         st.dataframe(df)
     except FileNotFoundError:
-        st.error("No se encontró el archivo 'data/pedidos.csv")
+        st.error("No se encontró el archivo 'Archivos/pedidop.csv")
     except Exception as e:
         st.error(f"Ocurrió un error: {e}")
 
